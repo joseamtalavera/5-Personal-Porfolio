@@ -1,0 +1,249 @@
+
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html {
+    font-size: 16px;
+  }
+
+
+body {
+  font-family: sans-serif;
+  color: gray;
+}
+
+/* start nav*/
+
+#navbar {
+display: flex;
+justify-content: flex-end;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+min-height: 75px;
+background-color: gray;
+z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 30px;
+    list-style: none;
+    align-items: center; 
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    padding: 32px;
+    font-size: 18px;
+}
+
+/* start section welcome 1*/
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: red;
+  margin-top: 75px;
+
+}
+
+#welcome-section h1 {
+  font-size: 55px;
+  color: white;
+}
+
+#welcome-section p {
+  font-size: 32px;
+  font-weight: 100;
+  font-style: italic;
+  color: white;
+}
+
+/* section projects */
+
+
+.projects-section {
+  padding: 136px 32px 32px 32px;
+  background-color: #eee;
+  text-align: center;
+  
+}
+
+.projects-section h2 {
+  font-weight: 700;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 42px;
+  color: gray;
+}
+
+.project-section-header {
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border: 0.2rem solid gray;
+}
+
+/* here i foundo some problems that are solve with the auto-fit */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 48px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 96px;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+.project {
+    background-color: none;
+}
+.project-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solidg gray;
+}
+
+.project-tile {
+  font-size: 24px;
+  padding: 30px 10px;
+  color: red;
+}
+
+.project-tile.box {
+    border: 1 solid red;
+}
+
+.btn {
+  font-size: 2rem;
+  background-color: none;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+  color: gray
+}
+
+.fa-chevron-right {
+  margin-left: 10px;
+  font-weight: 900;
+  font-family: "Font Awesone 5 Free";
+}
+
+/*
+.fa-chevron-right {
+  content: "\f054";
+}
+
+/* section contact*/
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  width: 100%;
+  height: 60vh;
+  text-align: center;
+  color: white;
+
+}
+
+#contact h2 {
+  font-size: 42px;
+}
+#contact p {
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-white)
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+
+}
+
+.contact-links a {
+    color: white;
+    font-size: 32px;
+}
+
+.fa-facebook-square {
+  font-family: "Font Awesone 5 Free";
+}
+.fa-github {
+  font-family: "Font Awesone 5 Free";
+}
+.fa-twitter {
+  font-family: "Font Awesone 5 Free";
+}
+.fas-at {
+  font-family: "Font Awesone 5 Free";
+}
+.fa-facebook-square {
+  font-family: "Font Awesone 5 Free";
+}
+.fa-mobile-alt {
+  font-family: "Font Awesone 5 Free";
+}
+
+/*footer*/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: grey;
+  border-top: 2px solid red;
+  width: 100%;
+  height: 10vh;
+  padding: 32px;
+
+}
+
+@media (max-width: 700px) {
+  #navbar {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 75px;
+    background-color: red;
+    z-index: 10;
+    }
+
+    h1 {
+      text-align: center;
+    }
+    p {
+      text-align: center;
+    }
+}
+
+
+
