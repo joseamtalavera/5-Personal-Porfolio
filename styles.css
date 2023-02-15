@@ -120,7 +120,7 @@ z-index: 10;
   border: 0.2rem solid gray;
 }
 
-/* here i foundo some problems that are solve with the auto-fit */
+/* here i found some problems that are solve with the auto-fit */
 
 .projects-container {
   display: grid;
@@ -235,6 +235,8 @@ a {
 .fa-mobile-alt {
   font-family: "Font Awesone 5 Free";
 }
+
+
 
 /*footer*/
 
